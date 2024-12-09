@@ -53,6 +53,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     margin-right: 20px;
+    font-size: 18px;
 }
 
 .header ul li a {
@@ -123,6 +124,8 @@ body {
     display: block;
 }
 
+
+/* -------------------------------------- sec 1 ------------------------ */
 
 .bg {
     width: 100%;
@@ -354,14 +357,12 @@ body {
     color: rgb(221, 221, 221);
     margin-top: 20px;
     font-size: 30px;
-
 }
 
 .s3-item-p {
     color: white;
     margin-top: 20px;
     font-size: 30px;
-
 }
 
 
@@ -371,11 +372,40 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     color: #ffffff;
     font-size: 30px;
-
 }
+
+.s3-item-title,
+.s3-item-p,
+.s3-item-icon1,
+.s3-item-icon2 {
+    opacity: 0;
+    transition: 1s;
+}
+
 
 .s3-item:hover .s3-item-overlay {
     opacity: 1;
+    transition: 1s;
+}
+
+.s3-item:hover .s3-item-title {
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+.s3-item:hover .s3-item-p {
+    opacity: 1;
+    transition-delay: 1.3s;
+}
+
+.s3-item-icon1,
+.s3-item-icon2 {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+
+.s3-item-icon1:hover {
+    color: red;
 }
 
 
